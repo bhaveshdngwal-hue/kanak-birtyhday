@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="A luxury romantic birthday love story crafted with love for Kanak." />
+  <meta name="keywords" content="birthday, love story, Kanak, romantic, luxury website" />
+  <meta name="author" content="For My Malkin Kanak" />
+  <meta name="theme-color" content="#ffc0cb" />
+  <meta property="og:title" content="Happy Birthday My Malkin ❤️ Kanak" />
+  <meta property="og:description" content="Unlock a magical birthday love story made just for you." />
+  <title>Happy Birthday My Malkin ❤️ Kanak</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500&family=Poppins:wght@200;300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor-heart" id="cursorHeart">❤</div>
+
+  <!-- ============ ANIMATED BACKGROUND ============ -->
+  <div class="bg-fx">
+    <div class="aurora"></div>
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+    <div class="light-rays"></div>
+    <div class="floating-layer" id="floatingLayer"></div>
+  </div>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div class="loader" id="loader">
+    <div class="loader-particles" id="loaderParticles"></div>
+    <div class="loader-heart">❤️</div>
+    <p class="loader-text">Preparing something magical...</p>
+    <div class="loader-bar"><span id="loaderFill"></span></div>
+  </div>
+
+  <!-- ============ LOCK SCREEN ============ -->
+  <div class="lockscreen" id="lockscreen">
+    <div class="lock-particles" id="lockParticles"></div>
+    <div class="lock-top">
+      <div class="lock-icon" id="lockIcon">🔒</div>
+      <div class="lock-time" id="lockTime">00:00</div>
+      <div class="lock-date" id="lockDate">Today</div>
+    </div>
+    <div class="lock-bottom">
+      <div class="faceid" id="faceid"><div class="faceid-ring"></div><span>🔐</span></div>
+      <p class="lock-prompt">Enter Passcode</p>
+      <div class="passcode-dots" id="passcodeDots">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+      <p class="lock-message" id="lockMessage"></p>
+      <div class="keypad" id="keypad">
+        <button class="key" data-num="1"><span class="key-num">1</span></button>
+        <button class="key" data-num="2"><span class="key-num">2</span><span class="key-sub">ABC</span></button>
+        <button class="key" data-num="3"><span class="key-num">3</span><span class="key-sub">DEF</span></button>
+        <button class="key" data-num="4"><span class="key-num">4</span><span class="key-sub">GHI</span></button>
+        <button class="key" data-num="5"><span class="key-num">5</span><span class="key-sub">JKL</span></button>
+        <button class="key" data-num="6"><span class="key-num">6</span><span class="key-sub">MNO</span></button>
+        <button class="key" data-num="7"><span class="key-num">7</span><span class="key-sub">PQRS</span></button>
+        <button class="key" data-num="8"><span class="key-num">8</span><span class="key-sub">TUV</span></button>
+        <button class="key" data-num="9"><span class="key-num">9</span><span class="key-sub">WXYZ</span></button>
+        <span class="key-empty"></span>
+        <button class="key" data-num="0"><span class="key-num">0</span></button>
+        <button class="key key-del" id="keyDelete">⌫</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ WELCOME SCREEN ============ -->
+  <div class="welcome" id="welcome">
+    <div class="welcome-content">
+      <p class="welcome-pre">A love story begins...</p>
+      <h1 class="welcome-title" id="welcomeTitle"></h1>
+      <button class="btn btn-glow ripple magnetic" id="enterBtn">Enter Our Story ✨</button>
+    </div>
+  </div>
+
+  <!-- ============ MAIN SITE ============ -->
+  <div class="site" id="site">
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- NAV -->
+    <nav class="navbar glass" id="navbar">
+      <a href="#hero" class="nav-logo">Kanak<span>❤</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#letter">Letter</a></li>
+        <li><a href="#gallery">Memories</a></li>
+        <li><a href="#timeline">Story</a></li>
+        <li><a href="#reasons">Reasons</a></li>
+        <li><a href="#cake">Cake</a></li>
+        <li><a href="#wish">Wishes</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-pre reveal">Celebrating the Most Beautiful Girl ❤️</p>
+        <h1 class="hero-title reveal">Happy Birthday<br/>My Malkin <span class="beat">❤️</span> Kanak</h1>
+        <p class="hero-sub reveal">Today the whole world celebrates the girl who lights up mine.</p>
+        <div class="countdown glass reveal" id="countdown">
+          <div class="cd-item"><span id="cdDays">00</span><small>Days</small></div>
+          <div class="cd-item"><span id="cdHours">00</span><small>Hours</small></div>
+          <div class="cd-item"><span id="cdMins">00</span><small>Minutes</small></div>
+          <div class="cd-item"><span id="cdSecs">00</span><small>Seconds</small></div>
+        </div>
+        <div class="hero-cake reveal">
+          <div class="mini-cake">🎂</div>
+        </div>
+      </div>
+      <div class="hero-scroll">↓</div>
+    </header>
+
+    <!-- LOVE LETTER -->
+    <section class="section" id="letter">
+      <h2 class="section-title reveal">A Letter For You</h2>
+      <p class="section-sub reveal">Tap the envelope to read my heart 💌</p>
+      <div class="envelope-wrap reveal">
+        <div class="envelope" id="envelope">
+          <div class="env-flap"></div>
+          <div class="env-body"></div>
+          <div class="env-heart">❤</div>
+          <div class="letter-paper glass" id="letterPaper">
+            <p class="typewriter" id="typewriter"></p>
+            <p class="letter-sign">— Forever yours</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMORY GALLERY -->
+    <section class="section" id="gallery">
+      <h2 class="section-title reveal">Our Beautiful Memories</h2>
+      <p class="section-sub reveal">Every moment with you is a treasure 💕</p>
+      <div class="gallery-grid" id="galleryGrid">
+        <figure class="polaroid reveal"><img src="https://picsum.photos/seed/kanak1/500/500" alt="Memory 1" loading="lazy"/><figcaption>Us 💕</figcaption></figure>
+        <figure class="polaroid reveal"><img src="https://picsum.photos/seed/kanak2/500/500" alt="Memory 2" loading="lazy"/><figcaption>Forever 🌸</figcaption></figure>
+        <figure class="polaroid reveal"><img src="https://picsum.photos/seed/kanak3/500/500" alt="Memory 3" loading="lazy"/><figcaption>Smile ✨</figcaption></figure>
+        <figure class="polaroid reveal"><img src="https://picsum.photos/seed/kanak4/500/500" alt="Memory 4" loading="lazy"/><figcaption>Love ❤️</figcaption></figure>
+        <figure class="polaroid reveal"><img src="https://picsum.photos/seed/kanak5/500/500" alt="Memory 5" loading="lazy"/><figcaption>Dreams 🌙</figcaption></figure>
+        <figure class="polaroid reveal"><img src="https://picsum.photos/seed/kanak6/500/500" alt="Memory 6" loading="lazy"/><figcaption>Always 💖</figcaption></figure>
+      </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" id="lightboxClose">&times;</span>
+      <img src="" alt="Preview" id="lightboxImg" />
+    </div>
+
+    <!-- TIMELINE -->
+    <section class="section" id="timeline">
+      <h2 class="section-title reveal">Our Little Story</h2>
+      <div class="timeline">
+        <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card glass"><span class="tl-date">The Beginning</span><h3>First Meeting</h3><p>The moment my world got a little brighter.</p></div></div>
+        <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card glass"><span class="tl-date">Getting Closer</span><h3>First Conversation</h3><p>Hours felt like seconds when I talked to you.</p></div></div>
+        <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card glass"><span class="tl-date">Cherished</span><h3>Best Memories</h3><p>Every laugh, every smile — treasures forever.</p></div></div>
+        <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card glass"><span class="tl-date">Today</span><h3>Birthday Celebration</h3><p>Celebrating the most beautiful soul I know.</p></div></div>
+        <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-card glass"><span class="tl-date">Forever</span><h3>Future Dreams</h3><p>A lifetime of adventures waiting for us.</p></div></div>
+      </div>
+    </section>
+
+    <!-- REASONS (30 cards, 3D flip) -->
+    <section class="section" id="reasons">
+      <h2 class="section-title reveal">30 Reasons You're Special</h2>
+      <p class="section-sub reveal">Hover or tap a card to flip it 💝</p>
+      <div class="reasons-grid" id="reasonsGrid"></div>
+    </section>
+
+    <!-- LOVE COUNTER -->
+    <section class="section" id="counter">
+      <h2 class="section-title reveal">By The Numbers ❤️</h2>
+      <div class="counter-grid">
+        <div class="counter-card glass reveal"><div class="ct-emoji">😊</div><span class="ct-num" data-target="99999">0</span><p>Smiles because of you</p></div>
+        <div class="counter-card glass reveal"><div class="ct-emoji">🌟</div><span class="ct-num" data-target="10000">0</span><p>Happy moments</p></div>
+        <div class="counter-card glass reveal"><div class="ct-emoji">💖</div><span class="ct-num" data-target="1000000">0</span><p>Endless love</p></div>
+        <div class="counter-card glass reveal"><div class="ct-emoji">📸</div><span class="ct-num" data-target="52000">0</span><p>Beautiful memories</p></div>
+      </div>
+    </section>
+
+    <!-- BIRTHDAY CAKE -->
+    <section class="section cake-section" id="cake">
+      <h2 class="section-title reveal">Make a Wish 🎂</h2>
+      <p class="section-sub reveal">Blow the candles, then cut the cake!</p>
+      <div class="cake-wrap reveal">
+        <div class="cake" id="cakeEl">
+          <div class="cake-plate"></div>
+          <div class="cake-layer layer-bottom"></div>
+          <div class="cake-layer layer-middle"></div>
+          <div class="cake-layer layer-top"></div>
+          <div class="candles" id="candles">
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+            <div class="candle"><div class="flame"></div></div>
+          </div>
+          <div class="knife" id="knife">🔪</div>
+        </div>
+      </div>
+      <div class="cake-buttons">
+        <button class="btn btn-glow ripple magnetic" id="blowBtn">Blow the Candles 🕯️</button>
+        <button class="btn btn-outline ripple" id="cutBtn">Cut the Cake 🍰</button>
+      </div>
+    </section>
+
+    <!-- WISH GENERATOR -->
+    <section class="section wish-section" id="wish">
+      <h2 class="section-title reveal">Wish Generator</h2>
+      <p class="section-sub reveal">A new little wish, every single click ✨</p>
+      <div class="wish-card glass reveal">
+        <p class="wish-text" id="wishText">Click the button to reveal your first surprise wish ❤️</p>
+      </div>
+      <button class="btn btn-glow ripple magnetic" id="wishBtn">Click for a Surprise ❤️</button>
+    </section>
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-player glass" id="musicPlayer">
+      <div class="mp-cover" id="mpCover">🎵</div>
+      <div class="mp-main">
+        <span class="mp-title" id="mpTitle">Romantic Melody</span>
+        <div class="mp-progress" id="mpProgress"><span id="mpProgressFill"></span></div>
+        <div class="mp-controls">
+          <button class="mp-btn" id="mpPrev">⏮</button>
+          <button class="mp-btn mp-play" id="mpPlay">▶</button>
+          <button class="mp-btn" id="mpNext">⏭</button>
+          <button class="mp-btn" id="mpMute">🔊</button>
+          <input type="range" class="mp-volume" id="mpVolume" min="0" max="1" step="0.01" value="0.6"/>
+        </div>
+      </div>
+    </div>
+    <audio id="bgMusic" loop preload="none">
+      <source src="She & Him - I Thought I Saw Your Face Today (Official Lyric Video).mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- FINAL SURPRISE -->
+    <section class="finale" id="finale">
+      <div class="moon">🌕</div>
+      <div class="finale-content reveal">
+        <h2 class="finale-title">Happy Birthday My Beautiful Malkin Kanak ❤️</h2>
+        <p class="finale-sub">May every dream of yours come true.<br/>Thank you for making life more beautiful. ❤️</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer glass">
+      <p>Made with <span class="beat-small">❤️</span> especially for <strong>My Malkin Kanak</strong></p>
+      <p class="footer-small">© <span id="year"></span> — Forever & Always</p>
+    </footer>
+
+    <!-- HIDDEN LOVE MESSAGE BUTTON -->
+    <button class="secret-btn" id="secretBtn">💝 A Secret</button>
+
+    <!-- SECRET POPUP -->
+    <div class="secret-popup" id="secretPopup">
+      <div class="secret-inner glass">
+        <span class="secret-close" id="secretClose">&times;</span>
+        <div class="secret-heart">💖</div>
+        <p class="secret-text">"No matter where life takes us, you'll always be my favorite person. Happy Birthday, Kanak ❤️"</p>
+      </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop">↑</button>
+    <canvas id="fxCanvas" class="fx-canvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
